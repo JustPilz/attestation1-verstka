@@ -1,8 +1,13 @@
 @content-width: 1020px;
 
-html, body {
+html, body, p {
     margin: 0;
     padding: 0;
+}
+
+p {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
 }
 
 body {
@@ -12,12 +17,16 @@ body {
 .main {
     background-image: url("/img/bg.jpg");
     background-size: cover;
+    position: relative;
     .column {
-        position: relative;
         max-width: @content-width;
-        margin: 0 auto;
-        height: 565px;
         padding: 0 20px;
+        margin: 0 auto;
+    }
+    .container {
+        position: relative;
+        
+
         header {
             display: flex;
             justify-content: space-between;
@@ -119,5 +128,137 @@ body {
                     }
                 }
             }
+            .features {
+                height: 212px;
+                width: 100%;
+                background-color: white;
+                font-family: "Segoe UI", segoe;
+                text-transform: uppercase;
+                .column {
+                        padding-top: 35px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: flex-end;
+                    div {
+                        text-align: center;
+                        p {
+                            font-size: 24px;
+                            text-align: justify;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+            .yellow-layer {
+                background-image: url("/img/bg2.jpg");
+                display: flex;
+                flex-direction: row;
+
+                .title {
+                    font-size: 36px;
+                    color: white;
+                    font-family: "Segoe UI", segoe;
+                    text-transform: uppercase;
+                    font-stretch: expanded;
+                    padding: 30px 0;
+                }
+                .news {
+                    .top {
+                        max-height: 232px;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+
+                        .text {
+                            background-color: #ec9e03;
+                            padding: 16px 25px;
+                            max-width: 300px;
+                            max-height: 200px;
+                            font-size: 26px;
+                            color: white;
+                            font-family: "Segoe UI", segoe;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            position: relative;
+                        }
+                    }
+                    .date {
+                        background-color: #ddb101;
+                        max-width: 112px;
+                        max-height: 86px;
+                        p:first-child {
+                            text-align: center;
+                            font-family: "Segoe UI", segoe;
+                            font-size: 46px;
+                            font-weight: bold;
+                            color: white;
+                            line-height: 46px
+                        }
+                        p:last-child {
+                            text-align: center;
+                            color: #b26529;
+                            font-family: "Segoe UI", segoe;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            padding-bottom: 2px;
+                        }
+                    }
+                }
+                .twitter {
+                    max-height: 232px;
+                    background-color: #ec9e03;
+                    width: 330px;
+                    max-width: 330px;
+                    display: flex;
+                    position: relative;
+                    .img {
+                        display: block;
+                        margin: auto;
+                    }
+                }
+                .scroll {
+                    margin: 30px auto;
+                    width: 80%;
+                    height: 15px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 7px;
+                    position: relative;
+                    &-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: @content-width;
+                    }
+                    .bar {
+                        position: absolute;
+                        left: 150px;
+                        background-color: #ec9e03;
+                        width: 200px;
+                        height: inherit;
+                        border-radius: inherit;
+                    }
+                }
+
+
+
+            }
     }
 }
+
+                    button.add {
+                        position: absolute;
+                        padding: 0;
+                        width: 11px;
+                        height: 11px;
+                        background-color: Transparent;
+                        background-repeat:no-repeat;
+                        border: none;
+                        cursor:pointer;
+                        overflow: hidden;
+                        outline:none;
+                        right: 10px;
+                        bottom: 12px;
+                    }

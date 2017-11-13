@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head xmlns="http://www.w3.org/1999/xhtml">
     <title>Адаптивная вёрстка</title>
     <link rel="stylesheet/less" media="screen and (min-width: 900px)" type="text/css" href="less/styles.less" />
     <link rel="stylesheet" media="screen and (min-width: 376px) and (max-width: 900px)" href="medium.less" />
@@ -11,8 +11,8 @@
 </head>
 <body>
     <section class="main">
-        <section class="column">
-            <header>
+        <section class="container">
+            <header class="column">
                 <div class="logo"><img src="img/header/logo.png"></div>
                 <nav>
                     <ul>
@@ -22,11 +22,38 @@
                     </ul>
                 </nav>
             </header>
-            <div class="slider">
+            <div class="slider column">
                 <div class="page1">
                     <div class="img"><img src="img/img.png" /></div>
                     <div class="text"><p class="fill">The cool</p><p>The minimal</p></div>
                 </div>
+            </div>
+            <div class="features">
+                <div class="column">
+                    <div><img src="img/features/betterdesign.png" /><p>Better design</p></div>
+                    <div><img src="img/features/customize.png" /><p>Customize</p></div>
+                    <div><img src="img/features/itsfree.png" /><p>Its free</p></div>
+                </div>
+            </div>
+            <div class="yellow-layer">
+                <div class="column">
+                    <p class="title">Lorem ipsum dolor sit amet</p>
+                    <div class="scroll-container">
+                        <div class="news">
+                            <div class="top">
+                                <div class="text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span><button class="add"><img src="img/add.png" /></button></div>
+                                <div class="img_block"><img src="img/img.jpg" /></div>
+                            </div>
+                            <div class="date"><p>25</p><p>April</p></div>
+                        </div>
+                        <div class="twitter">
+                            <img class="img" src="img/twitter.png" />
+                            <button class="add"><img src="img/add.png" /></button>
+                        </div>
+                    </div>
+                    <div class="scroll "><div class="bar"></div>
+                </div>
+
             </div>
         </section>
     </section>
