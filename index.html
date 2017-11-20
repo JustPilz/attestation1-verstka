@@ -10,33 +10,33 @@
     <script src="js/less.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <section class="main">
-        <section class="container">
+    <main class="main">
+        <div class="container"> <!-- здесь стоило бы использовать section, но поскольку этому тегу обязателен заголовок, которого тут нет, здесь используется div -->
             <header class="column">
-                <div class="logo"><img src="img/header/logo.png"></div>
+                <div class="logo"><img src="img/header/logo.png" alt="logo" /></div>
                 <nav>
                     <ul>
-                        <li><img src="img/header/menu/aboutus.png" />About us</li>
-                        <li><img src="img/header/menu/services.png" />Services</li>
-                        <li><img src="img/header/menu/contact.png" />Contact</li>
+                        <li><img src="img/header/menu/aboutus.png" alt="About us"/>About us</li>
+                        <li><img src="img/header/menu/services.png" alt="Services" />Services</li>
+                        <li><img src="img/header/menu/contact.png"  alt="Contacts" />Contact</li>
                     </ul>
                 </nav>
             </header>
             <div class="slider">
-                <div class="ctrl-left"><img src="img/header/arrow.png" /></div>
-                <div class="ctrl-right"><img src="img/header/arrow.png" /></div>
+                <div class="ctrl-left"><img src="img/header/arrow.png" alt="left arrow" /></div>
+                <div class="ctrl-right"><img src="img/header/arrow.png" alt="right arrow" /></div>
                 <div class="column">
                     <div class="page1">
-                        <div class="img"><img src="img/img.png" /></div>
+                        <div class="img"><img src="img/img.png" alt="Picture" /></div>
                         <div class="text"><p class="fill">The cool</p><p>The minimal</p></div>
                     </div>
                 </div>
             </div>
             <div class="features">
                 <div class="column">
-                    <div><img src="img/features/betterdesign.png" /><p>Better design</p></div>
-                    <div><img src="img/features/customize.png" /><p>Customize</p></div>
-                    <div><img src="img/features/itsfree.png" /><p>Its free</p></div>
+                    <div><img src="img/features/betterdesign.png" alt="Better design" /><p>Better design</p></div>
+                    <div><img src="img/features/customize.png" alt="Customize" /><p>Customize</p></div>
+                    <div><img src="img/features/itsfree.png" alt="Its free" /><p>Its free</p></div>
                 </div>
             </div>
             <div class="yellow-layer">
@@ -45,9 +45,9 @@
                     <div class="scroll-container">
                         <div class="news">
                             <div class="top">
-                                <div class="text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span><button class="add"><img src="img/add.png" /></button></div>
+                                <div class="text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</span><button class="add"><img src="img/add.png" alt="Add" /></button></div>
                                 <div class="img_block">
-                                    <img src="img/img.jpg" />
+                                    <img src="img/img.jpg" alt="Picture" />
                                     <div class="play">
                                         <div class="arrow"></div>
                                     </div>
@@ -56,8 +56,8 @@
                             <div class="date"><p>25</p><p>April</p></div>
                         </div>
                         <div class="twitter">
-                            <img class="img" src="img/twitter.png" />
-                            <button class="add"><img src="img/add.png" /></button>
+                            <img class="img" src="img/twitter.png" alt="Twitter" />
+                            <button class="add"><img src="img/add.png" alt="Add" /></button>
                         </div>
                     </div>
                     <div class="scroll "><div class="bar"></div></div>
@@ -70,9 +70,9 @@
                     </div>
                     <div class="bottom">
                         <div class="devices">
-                            <div class="pc"><img src="img/grey-layer/pc.png" /><div class="free"><span>Its 100% Free</span></div></div>
-                            <div class="tablet"><img src="img/grey-layer/tablet.png" /></div>
-                            <div class="mobile"><img src="img/grey-layer/mobile.png" /></div>
+                            <div class="pc"><img src="img/grey-layer/pc.png" alt="PC" /><div class="free"><span>Its 100% Free</span></div></div>
+                            <div class="tablet"><img src="img/grey-layer/tablet.png" alt="Tablet" /></div>
+                            <div class="mobile"><img src="img/grey-layer/mobile.png" alt="Mobile" /></div>
 
                         </div>
                         <ul class="ul-list">
@@ -86,10 +86,10 @@
             </div>
             <footer>
                 <div class="column">
-                    <img class="logo" src="img/footer/logo.png" />
+                    <img class="logo" src="img/footer/logo.png" alt="Footer logo" />
                 </div>
             </footer>
-        </section>
-    </section>
+        </div>
+    </main>
 </body>
 </html>
